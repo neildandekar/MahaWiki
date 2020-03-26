@@ -24,6 +24,7 @@ namespace MahaWiki.Activities
         private Button butGet;
         private RadioButton rbMarathi;
         private RadioButton rbEnglish;
+        private ImageView ivImage;
         private bool isMarathi;
         private bool isEnglish;
         private EditText etSearch;
@@ -37,6 +38,8 @@ namespace MahaWiki.Activities
             isEnglish = true;
             htmlContent = FindViewById<WebView>(Resource.Id.webView1);
             butGet = FindViewById<Button>(Resource.Id.butGet);
+            ivImage = FindViewById<ImageView>(Resource.Id.ivImage);
+            ivImage.SetImageResource(Resource.Drawable.Parat);
             rbMarathi = FindViewById<RadioButton>(Resource.Id.rbMarathi);
             rbEnglish = FindViewById<RadioButton>(Resource.Id.rbEnglish);
             etSearch = FindViewById<EditText>(Resource.Id.etSearch);
@@ -71,13 +74,13 @@ namespace MahaWiki.Activities
             {
                 isMarathi = true;
                 isEnglish = false;
-                etSearch.Text = "शोधायचा शब्द इथे द्या";
+                butGet.Text = "शोधा";
             };
             rbEnglish.Click += delegate 
             {
                 isEnglish = true;
                 isMarathi = false;
-                etSearch.Text = "Enter the word to be searched";
+                butGet.Text = "Find";
             };
             etSearch.Click += delegate 
             {

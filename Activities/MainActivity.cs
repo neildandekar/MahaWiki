@@ -20,15 +20,11 @@ namespace MahaWiki
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
             webView = FindViewById<WebView>(Resource.Id.webView2);
-            var htmlText = "<body><h1>Contents</h1><p><h2>Create stickers for</h2><p><b>Gboard</b><p> For the board meeting" +
-                        "fdsfadfadsf df dsfa df da sf adf  adfs ad f adf  dasf a f asdf a sf adsf a df a f adsaf" +
-                        "sgsfg fgsfgs sfgsf dgs fgs fg fg f g sfg sf g sfd gs fg sf g g<p>" +
-                        "sgsfg fgsfgs sfgsf dgs fgs fg fg f g sfg sf g sfd gs fg sf g g < p > " +
-                        "sgsfg fgsfgs sfgsf dgs fgs fg fg f g sfg sf g sfd gs fg sf g g < p > " +
-                        "sgsfg fgsfgs sfgsf dgs fgs fg fg f g sfg sf g sfd gs fg sf g g < p > " +
-                        "sgsfg fgsfgs sfgsf dgs fgs fg fg f g sfg sf g sfd gs fg sf g g < p > " +
-                        "sgsfg fgsfgs sfgsf dgs fgs fg fg f g sfg sf g sfd gs fg sf g g < p > " +
-                        "sgsfg fgsfgs sfgsf dgs fgs fg fg f g sfg sf g sfd gs fg sf g g < p >  </body>";
+            var htmlText = "<body><h1>महाराष्ट्र संस्कृतीच्या पाऊलखुणा</h1><p>"+
+                "समाजबदलांमुळे, वाढत्या जागतिकीकरणामुळे मराठी भाषेतील अनेक शब्द लोप पावत चालले आहेत. उदाहरणार्थ पडवी, माजघर..अनेक वस्तू कालबाह्य होत चाललेल्या आहेत.उदाहरणार्थ उखळ, पाटा वरवंटा."+
+                "अनेक पाककृती नामशेष होत चाललेल्या आहेत उदाहरणार्थ मांडे, पेंडपाला.<p>" +
+                "जुने मराठी साहित्य वाचताना या विस्मरणात चाललेल्या गोष्टींची कोठेतरी नोंद ठेवण्याची गरज आहे अशी जाणिव झाली.<p>"+
+                "<b> हा मराठी शब्दकोष नाही.</b>फक्त विस्मरणात चाललेल्या मराठी संस्कृतीच्या पाऊलखुणा...</body>";
             webView.LoadDataWithBaseURL("blarg://ignored", htmlText, "text/html", "utf-8", null);
             butOK = FindViewById<Button>(Resource.Id.butOK);
             butOK.Click += delegate

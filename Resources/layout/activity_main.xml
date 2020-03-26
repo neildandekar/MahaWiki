@@ -1,4 +1,4 @@
-
+﻿
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/webView2" />
         <Button
-            android:text="Button"
+            android:text="पुढे.."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/butOK"
