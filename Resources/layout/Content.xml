@@ -7,13 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
     <RadioGroup
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+        >
             <RadioButton
                 android:id="@+id/rbMarathi"
                 android:layout_weight="1"
@@ -52,19 +57,12 @@
             android:layout_weight="1"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
-            android:gravity="right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/butGet"
         />
         </LinearLayout>
-          <ImageView
-            android:contentDescription="Picture"
-            android:id="@+id/ivImage"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-        />
-        <android.webkit.WebView
+    <android.webkit.WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="20dp"
